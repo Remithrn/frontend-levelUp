@@ -1,23 +1,23 @@
 import { FaLocationArrow } from "react-icons/fa6";
 
-
 import MagicButton from "../Components/ui/MagicButton";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
-    const socialMedia = [
-        {
-          id: 1,
-          img: "/git.svg",
-        },
-        {
-          id: 2,
-          img: "/twit.svg",
-        },
-        {
-          id: 3,
-          img: "/link.svg",
-        },
-      ];
+  const socialMedia = [
+    {
+      id: 1,
+      img: "/git.svg",
+    },
+    {
+      id: 2,
+      img: "/twit.svg",
+    },
+    {
+      id: 3,
+      img: "/link.svg",
+    },
+  ];
   return (
     <footer className="w-full pt-20 pb-10" id="contact">
       {/* background grid */}
@@ -31,7 +31,8 @@ const Footer = () => {
 
       <div className="flex flex-col items-center">
         <h1 className="heading lg:max-w-[45vw]">
-        <span className="text-purple">  Your Insights Matter:</span> Help Us Improve with Your Feedback! 
+          <span className="text-purple"> Your Insights Matter:</span> Help Us
+          Improve with Your Feedback!
         </h1>
         <p className="text-white-200 md:mt-10 my-5 text-center">
           Reach out to me today and let&apos;s discuss how I can help you
@@ -47,7 +48,7 @@ const Footer = () => {
       </div>
       <div className="flex mt-16 md:flex-row flex-col justify-between items-center">
         <p className="md:text-base text-sm md:font-normal font-light">
-          Copyright © 2024 Level Up
+          <Link to="/admin/login">Copyright © 2024 Level Up</Link>
         </p>
 
         <div className="flex items-center md:gap-3 gap-6">
@@ -66,3 +67,4 @@ const Footer = () => {
 };
 
 export default Footer;
+

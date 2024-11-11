@@ -80,7 +80,7 @@ const GroupChat = () => {
        
     }, [id, access]);
 
-    const { sendJsonMessage, lastJsonMessage } = useWebSocket(`wss://13.60.84.189/ws/group-chat/${id}/?token=${access}`, {
+    const { sendJsonMessage, lastJsonMessage } = useWebSocket(`wss://ec2-16-171-173-138.eu-north-1.compute.amazonaws.com/ws/group-chat/${id}/?token=${access}`, {
         queryParams: {
             user_id: user?.pk,
         },

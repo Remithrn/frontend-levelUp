@@ -62,7 +62,7 @@ const Chats = () => {
   const myuser = convo?.conversation?.users?.find((user) => user.id === user_id);
   const otheruser = convo?.conversation?.users?.find((user) => user.id !== user_id);
 
-  const { sendJsonMessage, lastJsonMessage } = useWebSocket(`wss://13.60.84.189/ws/${id}/?token=${access}`, {
+  const { sendJsonMessage, lastJsonMessage } = useWebSocket(`wss://ec2-16-171-173-138.eu-north-1.compute.amazonaws.com/ws/${id}/?token=${access}`, {
     share: true,
     shouldReconnect: () => true,
   });
